@@ -1,0 +1,18 @@
+Q1. While traversing a single-circular linked list, which condition establishes that the traversing element/variable has reached the first element?
+A!. Lets understand the answer using the following example: 
+    void printList(Node* head)
+    {
+      Node* temp = head;
+      if (head != NULL) {
+        do {
+          cout << temp->data << " ";
+          temp = temp->next;
+        } while (temp != head);
+      }
+    }
+    In this example we are printing the circular linked list usign do-while loop.
+    When the iterator will reach a "node" whose next "node" is nothing but the "head" from where we have started our iteration,
+    the program will stop executing.
+
+Q2. What are the practical applications of a circular linked list? (Try to find applications in your respective fields)
+A2. Round Robin Scheduling Technique
